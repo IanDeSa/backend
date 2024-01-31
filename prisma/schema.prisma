@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Dispositivo {
+  id              String      @id @default(uuid())
+  nome            String
+  descricao       String
+  preco           Float
+  imagem          String      @db.LongText()
+  habilitado      Boolean
+  categoria       Categoria   @default(Smart)
+
+  @@map("dispositivos")
+}
+
+enum Categoria {
+  Smart
+  Tag
+  Mini
+  Totem
+}
