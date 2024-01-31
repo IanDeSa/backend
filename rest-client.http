@@ -1,0 +1,23 @@
+GET http://localhost:3000/dispositivos
+
+
+###
+GET http://localhost:3000/dispositivos/b6acf26a-d061-4eef-959a-a49807265671
+
+
+###
+POST http://localhost:3000/dispositivos
+Content-Type: application/json
+
+{
+    "nome": "Produto Teste",
+    "descricao": "Descrição do produto teste",
+    "preco": 29.99,
+    "imagem": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaUlEQVR42mP4/8IwCwAmAnQK0ZxD6AdMh0p0ZD0pgI0I0BGAvBmdP4gNLjYAMJp9hCqA00I2JRpGJIBgH8wKXKoPhHTiSDUE1SYEA/8g/oTLsMDo5pC7QBKQvB/vwYMHMQlAqDhQdCgA4I1IHNA0BZCg2D/I4kagwXoIYxQoAaEzBxBoIJRoAAAf0EQBMBj6vAAAAAElFTkSuQmCC",
+    "habilitado": true,
+    "categoria": "Smart"
+}
+
+
+###
+DELETE http://localhost:3000/dispositivos/b6acf26a-d061-4eef-959a-a49807265671
