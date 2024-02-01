@@ -22,7 +22,7 @@ async function bootstrap() {
   });
 
   const config = new DocumentBuilder()
-    .setTitle('Dashboard Insight API')
+    .setTitle('Ez Money Financeira')
     .setDescription('Documentação da API feita por Ian Santos')
     .setContact(
       'Ian Santos',
