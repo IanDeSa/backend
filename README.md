@@ -21,5 +21,8 @@ Para iniciar o projeto localmente, siga estes passos:
 5. Configure as variáveis de ambiente substituindo o arquivo .env.example por .env.
 6. Inicie o servidor com `npm run start`.
 
+### Swagger
+Acesse o swagger do projeto pelo endereço `http://localhost:3001/swagger`.
+
 ## Contato
 contato.iansantos@gmail.com
