@@ -10,6 +10,7 @@ import {
 } from '@nestjs/common';
 import { DispositivosService } from './dispositivos.service';
 import { CreateDispositivoDto } from './dto/create-dispositivo.dto';
+import { ApiBody } from '@nestjs/swagger';
 // import { UpdateDispositivoDto } from './dto/update-dispositivo.dto';
 
 @Controller('dispositivos')
@@ -17,6 +18,7 @@ export class DispositivosController {
   constructor(private readonly dispositivosService: DispositivosService) {}
 
   @Post()
+  @ApiBody({ type: CreateDispositivoDto })
   create(@Body(ValidationPipe) createDispositivoDto: CreateDispositivoDto) {
     return this.dispositivosService.create(createDispositivoDto);
   }
