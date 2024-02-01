@@ -1,12 +1,12 @@
-GET http://localhost:3000/dispositivos
+GET http://localhost:3001/dispositivos
 
 
 ###
-GET http://localhost:3000/dispositivos/b6acf26a-d061-4eef-959a-a49807265671
+GET http://localhost:3001/dispositivos/b6acf26a-d061-4eef-959a-a49807265671
 
 
 ###
-POST http://localhost:3000/dispositivos
+POST http://localhost:3001/dispositivos
 Content-Type: application/json
 
 {
@@ -20,4 +20,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:3000/dispositivos/b6acf26a-d061-4eef-959a-a49807265671
+DELETE http://localhost:3001/dispositivos/b6acf26a-d061-4eef-959a-a49807265671
