@@ -16,8 +16,8 @@ Para iniciar o projeto localmente, siga estes passos:
 ### Back-end
 1. Navegue até a pasta do back-end.
 2. Instale as dependências com `npm install`.
-3. Inicie o docker-compose com `docker compose up -d`
-4. Configure o banco de dados conforme necessário.
+3. Inicie o docker-compose com `docker compose up -d`.
+4. Configure o banco de dados com o comando `npx prisma migrate dev --name init`.
 5. Configure as variáveis de ambiente substituindo o arquivo .env.example por .env.
 6. Inicie o servidor com `npm run start`.
 
